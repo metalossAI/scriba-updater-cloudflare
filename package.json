@@ -21,11 +21,11 @@
         ]
     },
     "devDependencies": {
-        "@cloudflare/vitest-pool-workers": "^0.8.61",
+        "@cloudflare/vitest-pool-workers": "^0.8.64",
         "@cloudflare/workers-types": "^4.20250726.0",
         "@stylistic/eslint-plugin-ts": "^4.4.1",
         "@types/semver": "^7.7.0",
-        "@typescript-eslint/eslint-plugin": "^8.39.0",
+        "@typescript-eslint/eslint-plugin": "^8.39.1",
         "@typescript-eslint/parser": "^8.32.1",
         "eslint": "^9.33.0",
         "eslint-config-prettier": "^10.1.8",
