@@ -11,6 +11,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     name: Deploy
+    environment: main
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -18,8 +19,9 @@ jobs:
       - name: Publish
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           secrets: ${{ secrets.GIT_API_TOKEN != '' && 'GIT_API_TOKEN' || '' }}
         env:
           GIT_API_TOKEN: ${{ secrets.GIT_API_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
