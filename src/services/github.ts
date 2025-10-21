@@ -28,8 +28,8 @@ export async function getReleases(
         'User-Agent': request.headers.get('User-Agent') as string
     });
 
-    if (env.GITHUB_API_TOKEN?.length) {
-        headers.set('Authorization', `token ${env.GITHUB_API_TOKEN}`);
+    if (env.GIT_API_TOKEN?.length) {
+        headers.set('Authorization', `token ${env.GIT_API_TOKEN}`);
     }
 
     return await fetch(

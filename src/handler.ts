@@ -65,7 +65,7 @@ const handleV1Request = async (
     }
 
     const signature = await findAssetSignature(match.name, release.assets);
-    const proxy = env.GITHUB_API_TOKEN?.length;
+    const proxy = env.GIT_API_TOKEN?.length;
     const downloadURL = proxy
         ? createProxiedFileUrl(request, env, ctx, match.browser_download_url)
         : match.browser_download_url;

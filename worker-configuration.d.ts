@@ -4,5 +4,5 @@
 export interface Env {
     GITHUB_ACCOUNT: string;
     GITHUB_REPO: string;
-    GITHUB_API_TOKEN?: string;
+    GIT_API_TOKEN?: string;
 }
