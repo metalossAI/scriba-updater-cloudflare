@@ -4,7 +4,7 @@ compatibility_flags = ["nodejs_compat"]
 main = "src/index.ts"
 
 routes = [
-  { pattern = "https://update-server.scriba.metaloss.es", custom_domain = true }
+  { pattern = "update-server.scriba.metaloss.es", custom_domain = true }
 ]
 
 [vars]
